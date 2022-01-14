@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wx.tools">
+
+    <!--10.0获取不到的权限-->
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <!--解决android 11无法拉起微信支付的问题-->
+    <queries>
+        <package android:name="com.tencent.mm" />
+    </queries>
+
+    <application
+        android:name=".BaseApp"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".view.activity.SplashActivity"
+            android:theme="@style/FullScreenAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.base.BaseActivity" />
+        <activity
+            android:name=".view.activity.MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.CustomerServiceActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.MineActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.RecoveryTipsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.WeChatRecoveryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.HuaWeiRecoveryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.WeChatPicsRecoveryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.WechatBillRecoveryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.WeChatDocRecoveryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.WeChatVideoRecoveryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.VideoDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.SinglePayActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.WeChatVoiceRecoveryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.PayActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.PaySuccessActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.PicDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.ChooseAccountActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.WeChatHomeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.WeChatActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.SettingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.AgreementActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.FileReaderActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.FeedbackActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.TutorialActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.WechatDeleteActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.VoiceDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.DocDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.GroupActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.QuestionActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.FastPayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.tencent.smtt.export.external.DexClassLoaderProviderService"
+            android:label="dexopt"
+            android:process=":dexopt" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <!--        <service-->
+        <!--            android:name=".view.service.HelpService"-->
+        <!--            android:enabled="true"-->
+        <!--            android:exported="true"-->
+        <!--            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">-->
+        <!--            <intent-filter>-->
+        <!--                <action android:name="android.accessibilityservice.AccessibilityService" />-->
+        <!--            </intent-filter>-->
+        <!--            <meta-data-->
+        <!--                android:name="android.accessibilityservice"-->
+        <!--                android:resource="@xml/accessibility" />-->
+        <!--        </service>-->
+    </application>
+
+</manifest>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@color/color_blue"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="@dimen/dp_10"
+            android:padding="@dimen/dp_10"
+            android:src="@drawable/back_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/voice_list_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_16" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:background="@null"
+            android:dropDownWidth="150dp"
+            android:entries="@array/sort"
+            android:popupBackground="@color/color_blue"
+            android:spinnerMode="dropdown"
+            android:theme="@style/spinner" />
+
+    </FrameLayout>
+
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:layout_below="@+id/fl"
+        android:background="@color/color_cross_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_below="@+id/view1"
+        android:background="@color/color_blue"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner_from"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:dropDownWidth="150dp"
+            android:entries="@array/from"
+            android:paddingHorizontal="@dimen/dp_5"
+            android:popupBackground="@color/color_blue"
+            android:spinnerMode="dropdown"
+            android:theme="@style/spinner" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner_time"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:dropDownWidth="150dp"
+            android:entries="@array/size"
+            android:popupBackground="@color/color_blue"
+            android:spinnerMode="dropdown"
+            android:theme="@style/spinner" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner_size"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:dropDownWidth="150dp"
+            android:entries="@array/time"
+            android:popupBackground="@color/color_blue"
+            android:spinnerMode="dropdown"
+            android:theme="@style/spinner" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_1"
+        android:layout_margin="@dimen/dp_10"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_pics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/recovery_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@drawable/shape_corner_green"
+        android:text="@string/pics_list_button"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

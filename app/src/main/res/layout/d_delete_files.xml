@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_corner_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/delete_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/delete_title"
+        android:textColor="@color/color_title"
+        android:textSize="@dimen/sp_15" />
+
+    <ProgressBar
+        android:id="@+id/delete_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:max="10000"
+        android:progressDrawable="@drawable/progressbar_bg" />
+
+    <Button
+        android:id="@+id/delete_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:background="@drawable/shape_corner_green"
+        android:text="取消"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_20" />
+
+
+</LinearLayout>

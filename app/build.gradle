@@ -1,0 +1,150 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.recovery.b"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 2104
+        versionName "2.1.04"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        compileOptions {
+
+            sourceCompatibility JavaVersion.VERSION_11
+
+            targetCompatibility JavaVersion.VERSION_11
+
+        }
+
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a'
+        }
+
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('C:\\Users\\ASUS\\AndroidStudioProjects\\JxTools-B\\app\\jingxi.keystore')
+            storePassword 'abcd@1234'
+            keyAlias 'key'
+            keyPassword 'abcd@1234'
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    androidExtensions {
+        experimental = true
+    }
+
+    packagingOptions {
+        exclude 'AndroidManifest.xml'
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar", "*.aar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    configurations.all {
+        resolutionStrategy.force 'androidx.core:core-ktx:1.6.0'
+    }
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation 'org.apache.commons:commons-compress:1.20'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0'
+    implementation project(path: ':silk_lib')
+    implementation project(path: ':kefu-easeui')
+    implementation project(path: ':player')
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'me.zhanghai.android.materialprogressbar:library:1.6.1'
+    implementation 'com.kofigyan.stateprogressbar:stateprogressbar:1.0.0'
+    implementation 'javax.xml.bind:jaxb-api:2.3.1'
+    implementation group: 'xerces', name: 'xercesImpl', version: '2.12.0'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+
+    //jetPack
+//    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+//    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+//    implementation 'androidx.datastore:datastore:1.0.0-alpha05'
+    implementation 'androidx.room:room-runtime:2.2.6'
+    implementation "androidx.room:room-ktx:2.2.6"
+    implementation "androidx.cardview:cardview:1.0.0"
+    kapt 'androidx.room:room-compiler:2.2.6'
+
+    //SqlCipher for hooking weChat chat message databases
+    implementation "net.zetetic:android-database-sqlcipher:4.4.2"
+    implementation "androidx.sqlite:sqlite-ktx:2.1.0"
+
+    //rxjava2 + retrofit2 + okHttp3 + gson
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.9'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.14.9'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.5.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+
+    //local
+    implementation 'com.tencent:mmkv-static:1.2.7'
+
+    //视频播放库
+    implementation 'com.google.android.exoplayer:exoplayer:2.13.3'
+
+    //baidu
+    implementation files('libs/oaid_sdk_1.0.22.aar')
+    implementation files('libs/Baidu_ocpc_action_2_4.aar')
+
+    //aliyun oss
+    implementation 'com.aliyun.dpa:oss-android-sdk:2.9.5'
+
+    //Bugly
+    implementation 'com.tencent.bugly:nativecrashreport:3.9.1'
+    implementation 'com.tencent.bugly:crashreport_upgrade:1.5.1'
+
+    //wechat pay
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.6.23'
+
+    //image zoom
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+
+    //tencent tbs
+    implementation 'com.tencent.tbs.tbssdk:sdk:43939'
+
+    //self-cardview
+    implementation 'com.zyp.cardview:cardview:1.0.1'
+
+    //ad
+    implementation 'com.pangle.cn:ads-sdk-pro:4.0.0.6'
+
+}

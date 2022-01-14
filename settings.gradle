@@ -1,0 +1,2 @@
+include ':app',':silk_lib',':kefu-easeui',':player'
+rootProject.name = "JxTools-B"

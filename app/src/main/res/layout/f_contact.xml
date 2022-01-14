@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_2"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="提示：橙色名字代表删除的好友"
+            android:textColor="@color/color_yellow"
+            android:textSize="@dimen/sp_12" />
+
+        <ImageView
+            android:id="@+id/delete_tips"
+            android:layout_width="@dimen/dp_10"
+            android:layout_height="@dimen/dp_10"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp_5"
+            android:background="@drawable/ic_pop_up_icon_close" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_2"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:hint="搜索"
+        android:visibility="gone"
+        android:textSize="@dimen/sp_13" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_wx_chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:nestedScrollingEnabled="false" />
+
+</LinearLayout>

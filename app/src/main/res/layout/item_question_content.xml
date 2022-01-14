@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:background="@color/color_cross_line" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/question_content_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="微信聊天记录怎么恢复"
+            android:textColor="@color/color_content"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:id="@+id/question_ex"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:padding="@dimen/dp_10"
+            android:layout_gravity="end|center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/arr_down" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:layout_marginTop="@dimen/dp_50"
+        android:background="@color/color_cross_line" />
+
+    <TextView
+        android:id="@+id/question_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_60"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:gravity="start"
+        android:visibility="gone"
+        android:lineSpacingExtra="@dimen/dp_5"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="@color/color_dark_grey"
+        android:textSize="@dimen/sp_13" />
+
+
+</FrameLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/recovery"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_40"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_weight="1"
+        android:background="@drawable/background_gradient_btn"
+        android:text="@string/pics_list_button"
+        android:textSize="@dimen/sp_13"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_40"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_weight="1"
+        android:textSize="@dimen/sp_13"
+        android:background="@drawable/shape_corner_red"
+        android:text="@string/list_delete_button"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>

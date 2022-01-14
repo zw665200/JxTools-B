@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="size">
+        <item>默认大小</item>
+        <item>100KB以下</item>
+        <item>100KB~1MB</item>
+        <item>1MB以上</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>默认时间</item>
+        <item>7天以内</item>
+        <item>7天~30天</item>
+        <item>30天以上</item>
+    </string-array>
+
+    <string-array name="from">
+        <item>默认来源</item>
+        <item>微信聊天</item>
+        <item>微信朋友圈</item>
+        <item>微信头像</item>
+        <item>微信表情</item>
+        <item>其它</item>
+    </string-array>
+
+    <string-array name="qq_from">
+        <item>默认来源</item>
+        <item>QQ聊天</item>
+        <item>QQ表情</item>
+        <item>其它</item>
+    </string-array>
+
+    <string-array name="voice_sort">
+        <item>默认排序</item>
+        <item>由近到远</item>
+        <item>由远到近</item>
+        <item>由大到小</item>
+        <item>由小到大</item>
+    </string-array>
+
+    <string-array name="voice_size">
+        <item>默认大小</item>
+        <item>小于10K</item>
+        <item>10K以上</item>
+    </string-array>
+
+    <string-array name="video_sort">
+        <item>默认排序</item>
+        <item>由近到远</item>
+        <item>由远到近</item>
+        <item>由大到小</item>
+        <item>由小到大</item>
+    </string-array>
+
+    <string-array name="video_size">
+        <item>默认大小</item>
+        <item>小于10MB</item>
+        <item>10MB~100MB</item>
+        <item>100MB以上</item>
+    </string-array>
+
+    <string-array name="doc_size">
+        <item>默认大小</item>
+        <item>小于1MB</item>
+        <item>1MB以上</item>
+    </string-array>
+
+    <string-array name="sort">
+        <item>默认排序</item>
+        <item>从大到小</item>
+        <item>从小到大</item>
+        <item>从新到旧</item>
+        <item>从旧到新</item>
+    </string-array>
+
+    <string-array name="question_style">
+        <item>选择问题类型</item>
+        <item>服务态度</item>
+        <item>产品问题</item>
+    </string-array>
+
+</resources>

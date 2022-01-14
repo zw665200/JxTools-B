@@ -1,0 +1,256 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">强力数据恢复</string>
+
+    <!--home-->
+    <string name="home_title">专家提示</string>
+    <string name="home_content1">数据恢复越早，成功率越高</string>
+    <string name="home_content2">深度底层技术，请放心操作</string>
+
+    <!--box-->
+    <string name="box_title">价格</string>
+
+    <!--bill-->
+    <string name="bill_title">我的订单</string>
+
+    <!--mine-->
+    <string name="mine_vip">我的VIP</string>
+    <string name="mine_website">官网网站</string>
+    <string name="mine_help">联系客服</string>
+    <string name="mine_feedback">退款投诉</string>
+    <string name="mine_service">服务协议</string>
+    <string name="mine_privacy">隐私政策</string>
+    <string name="mine_setting">系统设置</string>
+
+    <!--recovery_tips-->
+    <string name="recovery_tips_title">微信聊天记录恢复</string>
+    <string name="recovery_tips_title_1">微信好友恢复</string>
+    <string name="recovery_tips_small_title">恢复记录</string>
+    <string name="recovery_tips_tips_title">左右滑动图片查看步骤（支持缩放）</string>
+    <string name="recovery_tips_step1_title">第一步 备份微信数据</string>
+    <string name="recovery_tips_step2_title">第二步 拷贝微信备份数据</string>
+    <string name="recovery_tips_step3_title">第三步 预览微信数据</string>
+    <string name="recovery_tips_step1_content">查看详细步骤 >>></string>
+    <string name="recovery_tips_step3_content">拷贝完备份数据之后，请点击“已完成备份”，在弹出的对话框中输入您备份时候的密码，然后点击确定开始解析数据</string>
+    <string name="recovery_tips_tips_content">移动端底层数据恢复技术，还原微信聊天加密算法，在分析数据的同时保证数据安全，请放心恢复~</string>
+    <string name="recovery_tips_backup">去备份</string>
+    <string name="recovery_tips_do">去恢复</string>
+    <string name="recovery_tips_done">已完成备份</string>
+    <string name="recovery_tips_dialog_title">您可以从以下备份中恢复数据</string>
+    <string name="recovery_tips_dialog_button">取消</string>
+    <string name="recovery_tips_oppo_description">
+        OPPO手机使用说明：如果需要备份，点击去备份，可能会弹出卸载备份程序界面，请同意卸载。原因是新版备份程序不支持备份应用的数据，需要还原到初始版本。
+    </string>
+    <string name="recovery_tips_huawei_description">
+        华为手机使用说明：如果需要备份，点击去备份，备份需要连接电脑端的华为手机助手(https://consumer.huawei.com/cn/support/hisuite/)进行备份，因为华为官方为了备份数据的安全性，关闭了手机备份通道。
+    </string>
+    <string name="recovery_tips_mi_description">
+        小米手机使用说明：如果需要备份，请点击去备份，跳转到【设置】界面，在设置里找到【备份与恢复】功能，按照教程进行备份操作。
+    </string>
+    <string name="recovery_tips_vivo_description">
+        VIVO手机使用说明：备份需要连接电脑端的VIVO互传助手（http://es.vivo.com.cn）进行备份，因为VIVO官方为了备份数据的安全性，关闭了手机备份通道。
+    </string>
+    <string name="recovery_tips_flyme_description">
+        魅族手机使用说明：如果需要备份，请点击去备份，跳转到【备份与恢复】界面，请按照教程操作。
+    </string>
+
+    <!--recovery-->
+    <string name="recovery_title">微信聊天记录恢复</string>
+    <string name="recovery_step1">预处理数据…</string>
+    <string name="recovery_step2">预处理完成</string>
+    <string name="recovery_step3">正在解析微信备份文件…</string>
+    <string name="recovery_step4">微信备份文件解析完成</string>
+    <string name="recovery_step5">正在解析微信聊天记录和通讯录…</string>
+    <string name="recovery_step6">微信聊天记录解析完成</string>
+    <string name="recovery_step7">正在解析微信通讯录…</string>
+    <string name="recovery_step8">微信通讯录解析完成</string>
+    <string name="recovery_step9">正在整理数据…</string>
+    <string name="recovery_step10">数据处理完成</string>
+    <string name="recovery_error">解析错误</string>
+    <string name="recovery_next_step">下一步</string>
+    <string name="recovery_tips">提示：数据包越大，处理时间会越长</string>
+
+    <!--choose account-->
+    <string name="choose_account_tip">提示：恢复的数据仅供查看，不能导入到微信里面，不和微信交互，添加删除掉的好友请用恢复的微信号前往微信添加好友</string>
+
+    <!--recovery_pay-->
+    <string name="recovery_pay_title1">超值套餐</string>
+    <string name="recovery_pay_content1">恢复，查看，导出微信聊天信息</string>
+    <string name="recovery_pay_content1_1">授权一个微信号 | 一年内有效</string>
+    <string name="recovery_pay_title2">聊天恢复记录</string>
+    <string name="recovery_pay_content2">支持所有恢复功能</string>
+    <string name="recovery_pay_content2_1">授权多个微信号 | 一年内有效</string>
+
+    <!--pics list-->
+    <string name="pics_list_title">微信图片</string>
+    <string name="pics_list_button">立刻恢复</string>
+    <string name="pics_list_des">当前图片清晰度即为图片原本的清晰度</string>
+
+    <!--title-->
+    <string name="search_status_doing">扫描中</string>
+    <string name="search_status_pause">扫描暂停</string>
+    <string name="search_status_finish">扫描结束</string>
+
+    <!--bottom-->
+    <string name="list_delete_button">彻底删除</string>
+
+    <!--qq pics list-->
+    <string name="qq_pics_title">QQ图片</string>
+    <string name="qq_pics_button">立刻恢复</string>
+
+    <!--voice list-->
+    <string name="voice_list_title">微信语音</string>
+    <string name="voice_list_button">立刻恢复</string>
+
+    <!--video list-->
+    <string name="video_list_title">微信视频</string>
+    <string name="video_list_button">立刻恢复</string>
+
+    <!--qq video list-->
+    <string name="qq_video_title">QQ视频</string>
+    <string name="qq_video_button">立刻恢复</string>
+
+    <!--doc list-->
+    <string name="doc_list_title">微信文档</string>
+    <string name="doc_list_button">立刻恢复</string>
+
+    <!--wechat-->
+    <string name="wechat_title">微信</string>
+    <string name="wechat_list_title">微信聊天记录</string>
+
+    <!--questions-->
+    <string name="questions_title">帮助中心</string>
+
+    <!--setting-->
+    <string name="setting_about_us">关于我们</string>
+    <string name="setting_about_us_des">关于我们，了解更多</string>
+    <string name="setting_clear_cache">清除缓存</string>
+    <string name="setting_clear_cache_des">清除缓存，加快运行速度</string>
+
+    <!--agreement-->
+    <string name="agreement_service">服务协议</string>
+    <string name="agreement_privacy">隐私政策</string>
+
+    <!--feedback-->
+    <string name="feedback">投诉与退款</string>
+    <string name="feedback_hint">请输入您的问题，10字以上</string>
+    <string name="feedback_pay_account">请输入您用于支付的支付宝账号</string>
+    <string name="feedback_contact">请输入您的手机号</string>
+    <string name="feedback_submit">提交</string>
+    <string name="feedback_img_content">上传图片（不超过3张 ,每张不大于1MB）</string>
+
+    <!--export dialog-->
+    <string name="export_title">正在导出文件</string>
+
+    <!--export dialog-->
+    <string name="dialog_pay_title">正在查询支付结果</string>
+    <string name="dialog_pay_tip">点击“已完成支付”查看支付结果</string>
+
+    <!--delete dialog-->
+    <string name="delete_title">正在删除微信数据</string>
+
+    <!--customer service dialog-->
+    <string name="customer_service_title">服务协议和隐私政策</string>
+    <string name="customer_service_refuse">暂不使用</string>
+    <string name="customer_service_agree">同意</string>
+    <string name="customer_service_agreement">欢迎您使用本软件，您可阅读《服务协议》和《隐私政策》了解详细信息。我们会收集一些设备信息用来标识您享有该设备的付费服务权益。如您同意，点击同意后开始授权和接受我们的服务。</string>
+
+    <!--customer auth service dialog-->
+    <string name="auth_service_title">风险提示</string>
+    <string name="auth_service_refuse">不同意</string>
+    <string name="auth_service_agree">同意</string>
+    <string name="auth_service_content">软件即将进入恢复界面，遵循隐私协议，确保是本机主操作，本操作恢复仅限于恢复本机数据，本软件无法获取及远程操用户的内容。</string>
+
+    <!--quit dialog-->
+    <string name="quite_title">确定要退出支付吗？</string>
+    <string name="quite_ok">确定</string>
+    <string name="quite_cancel">取消</string>
+
+    <!--delete file-->
+    <string name="delete_a_title">删除微信数据</string>
+    <string name="delete_inner">第一步：清除聊天文字记录数据(需手动)</string>
+    <string name="delete_outter">第二步：清除聊天图片语音等数据(自动)</string>
+    <string name="delete_description">删除微信文件，包含微信的聊天记录，图片文件，音频文件，视频文件，文档文件，缓存文件，删除后不可恢复，请谨慎操作</string>
+
+    <!--huawei pwd dialog-->
+    <string name="huawei_pwd_title">请输入华为备份助手中设置的密码</string>
+    <string name="huawei_pwd_default">默认密码：aA123456</string>
+    <string name="huawei_pwd_tip">提示：错误的密码会导致备份文件无法解开</string>
+    <string name="huawei_default_pwd">aA123456</string>
+
+    <!--huawei tutorial-->
+    <string name="tutorial_title">华为微信自助恢复</string>
+
+    <!--description-->
+    <string name="wechat_video_description">不包含微信聊天记录恢复和微信好友恢复</string>
+    <string name="wechat_voice_description">可恢复微信视频，语音，图片，文档</string>
+    <string name="qq_voice_description">查看已恢复的QQ语音</string>
+    <string name="qq_video_description">查看已恢复的QQ视频</string>
+    <string name="qq_pic_description">查看已恢复的QQ图片</string>
+
+    <!--pay-->
+    <string name="pay_wx_chat">不限制恢复账号 | 本手机授权一年 | 无限次找回</string>
+    <string name="pay_wx_contact">不限制恢复账号 | 本手机授权一年 | 无限次找回</string>
+    <string name="pay_wx_doc">本手机授权一年 | 无限次找回</string>
+    <string name="pay_wx_video">本手机授权一年 | 无限次找回</string>
+    <string name="pay_wx_voice">本手机授权一年 | 无限次找回</string>
+    <string name="pay_wx_pic">本手机授权一年 | 无限次找回</string>
+    <string name="pay_qq_pic">本手机授权一年 | 无限次找回</string>
+    <string name="pay_qq_video">本手机授权一年 | 无限次找回</string>
+    <string name="pay_delete">本手机授权一年 | 无限次删除</string>
+    <string name="pay_unit">元</string>
+    <string name="pay_title">订单支付</string>
+
+    <!--service-->
+    <string name="vip_service_des">VIP专属客服，点击发起会话</string>
+    <string name="visitor_service_des">全部会员可用，三个工作日内审核，审核结果短信通知</string>
+    <string name="common_questions_des">软件使用以及恢复等常见问题(非客服在线时间可以参考)</string>
+    <string name="charge">立即充值</string>
+
+    <!--public resource-->
+    <string name="progress_des">多选恢复和删除，长按查看详情</string>
+    <string name="progress_des_1">正在计算文件的大小…</string>
+    <string name="progress_des_2">多选恢复和删除</string>
+    <string name="progress_status_searching">扫描中</string>
+
+    <!--accessibility-->
+    <string name="access_description">一键备份</string>
+
+    <!--wechat error-->
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unsupported">不支持错误</string>
+    <string name="errcode_unknown">发送返回</string>
+
+    <!--not find dialog-->
+    <string name="not_find_title">提示</string>
+    <string name="not_find_content">没有检测到备份文件，请确认已按照教程在指定目录下拷贝了最新的备份文件</string>
+
+    <!--bill_recovery-->
+    <string name="bill_recovery_title">微信账单恢复</string>
+    <string name="bill_recovery_step1">1. 打开微信，如图点击支付。</string>
+    <string name="bill_recovery_step2">2. 如图，点击钱包。</string>
+    <string name="bill_recovery_step3">3. 如图，点击右上角的账单。</string>
+    <string name="bill_recovery_step4">4. 如图，点击常见问题。</string>
+    <string name="bill_recovery_step5">5. 如图，点击下载账单。</string>
+    <string name="bill_recovery_step6">6. 如图，选择账单的用途，选择第二个，用作证明材料，打印出来的pdf文档会包含删除过的账单记录。</string>
+    <string name="bill_recovery_step7">7. 如图，如果选择生成账单的时间范围，然后点击下一步。</string>
+    <string name="bill_recovery_step8">8. 如图，只能以邮件的形式收到账单，需要输入您的邮箱地址。</string>
+    <string name="bill_recovery_step9">9. 如图，涉及到财务敏感信息，可能需要输入您的证件信息。</string>
+    <string name="bill_recovery_step10">10. 如图，再次确认邮箱是否输入正确。</string>
+    <string name="bill_recovery_step11">11. 如图，提示申请已经提交，相关证明会发送到指定的邮箱里，文件打开需要密码，密码会通过公众号通知。</string>
+    <string name="bill_recovery_step12">12. 如图，收到文件发送的通知和文件解压的密码。</string>
+    <string name="bill_recovery_step13">13. 如图，去邮箱查找到邮件，下载文件，然后通过给的解压密码解压文件就能看到账单啦。</string>
+
+    <!--bill_pay-->
+    <string name="bill_pay_name">微信账单恢复</string>
+    <string name="bill_function">可使用微信账单恢复功能</string>
+    <string name="bill_pay_description">微信红包、转账记录、扫码支付、信用卡还款、收入与支出查询、可选择生成加盖公章的交易明细证明，可作为出国签证、银行贷款、财产纠纷、诉讼等事务的证明材料、最长时间可查2014年至今的记录。</string>
+    <string name="bill_pay_guide">因恢复个人账单内容，涉及到微信登陆、微信账号实名认证、真实姓名、身份证号码、支付密码等，本教程仅可本人亲自操作，全过程2分钟即可。所以本服务套餐为教程出售，一经购买，不支持退款。</string>
+
+    <!--delete_pay-->
+    <string name="delete_pay_name">微信彻底删除</string>
+    <string name="delete_function">可使用彻底删除恢复功能</string>
+    <string name="delete_pay_description">包含单个删除或者批量删除微信图片，音频，视频，文档，或者一键删除所有的聊天记录，图片，音频，视频，文档，缓存，数据库等文件</string>
+    <string name="delete_pay_guide">删除后不可恢复，请谨慎操作</string>
+</resources>
